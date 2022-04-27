@@ -1,0 +1,68 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+table{
+    position: absolute;
+    top:17%;
+    left: 35%;
+}
+.answer{
+    border:none;
+}
+td{
+    font-family: Arial;
+    font-size: 93px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}
+table,th,td{
+    border:1px solid black;
+}
+a {
+    text-decoration: none;
+    color:black
+}
+nav {
+    background-color:rgb(209, 255, 253) ;
+    height: 60px;
+    width: 100%;
+    top:0px;
+}
+nav ul{
+    float:left;
+    position:absolute;
+    top: 0px;
+    left: 45%;
+  
+}
+
+nav ul li{
+    float : left;
+    
+    list-style: none;
+    
+}
+nav ul li a{
+    display: block;
+    font-family: arial;
+    color:black;
+    font-size: 14px;
+    padding: 21px 14px;
+    border-right:2px solid black;
+    
+    text-decoration: none;
+}
+
+
+
+
+ nav ul li a:hover{
+    background-color:rgba(24, 24, 24,0.55);
+   
+}
+
+
+ 
