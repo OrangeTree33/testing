@@ -1,7 +1,40 @@
+@font-face {
+    font-family: 'digital-7';
+    src: url('digital-7-webfont.woff2') format('woff2'),
+         url('digital-7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 *{
+    
     margin:0;
     padding:0;
+}
+button{
+    text-align: center;
+    vertical-align: center;
+}
+.button{
+    padding: 73px 75px;
+    border: none;
+    background-color: #4CAF50;
+    max-width: 80px;
+    max-height: 80px;
+
+}
+.button:hover{
+    background-color: hwb(122 30% 37%);
+}
+.nbutton{
+    padding: 73px 75px;
+    border: none;
+   max-width: 80px;
+   max-height: 80px;
+   font-family: Digital-7;
+   font-size: 50px;
+   
+   
 }
 table{
     position: absolute;
@@ -12,11 +45,11 @@ table{
     border:none;
 }
 td{
-    font-family: Arial;
+    
     font-size: 93px;
     text-align: center;
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 120px;
 }
 table,th,td{
     border:1px solid black;
