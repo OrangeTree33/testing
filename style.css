@@ -6,6 +6,7 @@
     font-style: normal;
 
 }
+
 *{
     
     margin:0;
@@ -14,25 +15,34 @@
 button{
     text-align: center;
     vertical-align: center;
+
 }
 .button{
+    
+    background-color: rgba(255, 142, 142,0.6);
+    display:flex;
     padding: 73px 75px;
     border: none;
-    background-color: #4CAF50;
-    max-width: 80px;
-    max-height: 80px;
+   max-width: 80px;
+   max-height: 80px;
+   font-size: 73px;
+   justify-content: center;
+   align-items: center;
 
 }
 .button:hover{
-    background-color: hwb(122 30% 37%);
+    background-color: rgba(255, 142, 142,0.86);
 }
 .nbutton{
+    display:flex;
     padding: 73px 75px;
     border: none;
    max-width: 80px;
    max-height: 80px;
    font-family: Digital-7;
-   font-size: 50px;
+   font-size: 86px;
+   justify-content: center;
+   align-items: center;
    
    
 }
@@ -40,6 +50,7 @@ table{
     position: absolute;
     top:17%;
     left: 35%;
+    
 }
 .answer{
     border:none;
@@ -50,16 +61,19 @@ td{
     text-align: center;
     width: 110px;
     height: 120px;
+    
 }
 table,th,td{
     border:1px solid black;
+    
 }
 a {
     text-decoration: none;
     color:black
+    
 }
 nav {
-    background-color:rgb(209, 255, 253) ;
+    background-color:rgb(255, 142, 142) ;
     height: 60px;
     width: 100%;
     top:0px;

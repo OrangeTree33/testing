@@ -88,6 +88,22 @@ function numminus(){
 numbertemp=0;
 number1 = "";
 }
+function numx(){
+    var numbertemp= Number(number1)
+    numberanswerplus.push(numbertemp)
+    numberanswerplus.push("x")
+    
+numbertemp=0;
+number1 = "";
+}
+function numdivide(){
+    var numbertemp= Number(number1)
+    numberanswerplus.push(numbertemp)
+    numberanswerplus.push("/")
+    
+numbertemp=0;
+number1 = "";
+}
 function numequals(){
     var numbertemp= Number(number1)
     numberanswerplus.push(numbertemp)
@@ -116,3 +132,5 @@ function numequals(){
     
     
 }
+// add decimal :)
+// add max digit limit (not 11)
