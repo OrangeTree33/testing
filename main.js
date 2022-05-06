@@ -69,7 +69,14 @@ function num0(){
     }
     
 }
-
+function numstop(){
+    if(x==0){
+        number1= number1 + ".";
+        document.getElementById("output").innerHTML = number1;
+        x=1;
+    }
+    
+}
 function numplus(){
 
     var numbertemp= Number(number1)
@@ -79,6 +86,7 @@ function numplus(){
     
 numbertemp=0;
 number1 = "";
+x=0
 }
 function numminus(){
     var numbertemp= Number(number1)
@@ -87,6 +95,7 @@ function numminus(){
     
 numbertemp=0;
 number1 = "";
+x=0
 }
 function numx(){
     var numbertemp= Number(number1)
@@ -95,6 +104,7 @@ function numx(){
     
 numbertemp=0;
 number1 = "";
+x=0
 }
 function numdivide(){
     var numbertemp= Number(number1)
@@ -103,6 +113,7 @@ function numdivide(){
     
 numbertemp=0;
 number1 = "";
+x=0
 }
 function numequals(){
     var numbertemp= Number(number1)
@@ -129,8 +140,11 @@ function numequals(){
     }
     }
     document.getElementById("output").innerHTML = JSON.stringify(numberanswer, null, 2);
-    
-    
+    numberanswer=0;
+    numberanswerplus.length = 0;
+    numbertemp=0;
+number1 = "";
+x=0
 }
 // add decimal :)
 // add max digit limit (not 11)
