@@ -2,10 +2,11 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta charset="UTF-8">
     <title>Testing website</title>
     <link rel="stylesheet" type ="text/css" href="style.css">
-    <script src="./main.js" defer></script>
+    <script src="./converter.js" defer></script>
     <link href="/fonts/digital-7.ttf" rel="stylesheet">
     
     
@@ -16,13 +17,23 @@
     
         <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="cover1.jpg">About</a></li> 
+        <li><a href="">About</a></li> 
         <li><a href="converter.html">Converter</a></li> 
         
         
    
     </ul>  
     </nav>
+
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#" onclick="test()">Link 1</a>
+          <a href="#" onclick="test()">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div> 
 </body>
 
 <main> 
