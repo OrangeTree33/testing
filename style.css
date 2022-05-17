@@ -60,6 +60,7 @@ td{
     font-size: 93px;
     text-align: center;
     width: 110px;
+    max-width: 200px;
     height: 120px;
     
 }

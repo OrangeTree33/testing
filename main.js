@@ -199,6 +199,7 @@ function numequals(){
         numberanswer = Number(numberanswer) / numberanswerplus[i]
     }
     }
+    
     JSON.stringify(numberanswer, null, 2);
     
     document.getElementById("output").innerHTML = numberanswer
@@ -208,5 +209,4 @@ function numequals(){
 number1 = "";
 x=0
 }
-// add decimal :)
-// add max digit limit (not 11)
+// add rounding and backspace
