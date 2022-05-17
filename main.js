@@ -13,6 +13,9 @@ let numbertemp2=0;
 var end = false;
 // button.addEventListener('click', teste);
 
+window.addEventListener("keydown", (e) =>{
+    console.log("${e.key}");
+})
 function num1(){
 
     number1 = number1 + "1";
