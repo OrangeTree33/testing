@@ -13,9 +13,10 @@ let numbertemp2=0;
 var end = false;
 // button.addEventListener('click', teste);
 
-window.addEventListener("keydown", (e) =>{
-    console.log("${e.key}");
-})
+
+    
+    
+
 function num1(){
 
     number1 = number1 + "1";
@@ -77,6 +78,65 @@ function numstop(){
     }
     
 }
+window.addEventListener("keydown",function(event) {
+    if (event.defaultPrevented){
+        return;
+    }
+    switch (event.key){
+       
+        case "1":
+        num1();
+        break;
+        case "2":
+        num2();
+        break;
+        case "3":
+        num3();
+        break;
+        case "4":
+        num4();
+        break;
+        case "5":
+        num5();
+        break;
+        case "6":
+        num6();
+        break;
+        case "7":
+        num7();
+        break;
+        case "8":
+        num8();
+        break;
+        case "9":
+        num9();
+        break;
+        case "0":
+        num0();
+        break;
+        case ".":
+        numstop();
+        break;
+        case "+":
+        numplus();
+        break;
+        case "-":
+        numminus();
+        break;
+        case "*":
+        numx();
+        break;
+        case "/":
+        numdivide();
+        break;
+        case "Enter":
+        numequals();
+        break;
+        default:
+        return;
+    }
+    event.preventDefault();
+},true);
 function numplus(){
 
     var numbertemp= Number(number1)
@@ -139,7 +199,9 @@ function numequals(){
         numberanswer = Number(numberanswer) / numberanswerplus[i]
     }
     }
-    document.getElementById("output").innerHTML = JSON.stringify(numberanswer, null, 2);
+    JSON.stringify(numberanswer, null, 2);
+    
+    document.getElementById("output").innerHTML = numberanswer
     numberanswer=0;
     numberanswerplus.length = 0;
     numbertemp=0;
