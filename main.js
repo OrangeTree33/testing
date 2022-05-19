@@ -5,12 +5,10 @@ var number1= "";
 let numberanswerplus = [];
 let numberanswer = 0;
 let tempsymbol = "";
-var operations = 0;
-let testing = [];
 let x= 0;
-let z= 0;
-let numbertemp2=0;
-var end = false;
+
+
+
 // button.addEventListener('click', teste);
 
 
