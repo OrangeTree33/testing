@@ -2,7 +2,7 @@ const button = document.querySelector('button');
 const paragraph = document.querySelector('h1');
 const calcscreen = document.querySelector('#foor')
 var number1= "";
-let numberanswerplus = [];
+let numanswer = [];
 let numberanswer = 0;
 let tempsymbol = "";
 let x= 0;
@@ -138,8 +138,8 @@ window.addEventListener("keydown",function(event) {
 function numplus(){
 
     var numbertemp= Number(number1)
-    numberanswerplus.push(numbertemp)
-    numberanswerplus.push("+")
+    numanswer.push(numbertemp)
+    numanswer.push("+")
         
     
 numbertemp=0;
@@ -148,8 +148,8 @@ x=0
 }
 function numminus(){
     var numbertemp= Number(number1)
-    numberanswerplus.push(numbertemp)
-    numberanswerplus.push("-")
+    numanswer.push(numbertemp)
+    numanswer.push("-")
     
 numbertemp=0;
 number1 = "";
@@ -157,8 +157,8 @@ x=0
 }
 function numx(){
     var numbertemp= Number(number1)
-    numberanswerplus.push(numbertemp)
-    numberanswerplus.push("x")
+    numanswer.push(numbertemp)
+    numanswer.push("x")
     
 numbertemp=0;
 number1 = "";
@@ -166,8 +166,8 @@ x=0
 }
 function numdivide(){
     var numbertemp= Number(number1)
-    numberanswerplus.push(numbertemp)
-    numberanswerplus.push("/")
+    numanswer.push(numbertemp)
+    numanswer.push("/")
     
 numbertemp=0;
 number1 = "";
@@ -175,26 +175,26 @@ x=0
 }
 function numequals(){
     var numbertemp= Number(number1)
-    numberanswerplus.push(numbertemp)
-    numberanswer = numberanswerplus[0]; //remember this bigtch
-    for(let i = 1; i < numberanswerplus.length; i++){
-        if(numberanswerplus[i] == "+"){
+    numanswer.push(numbertemp)
+    numberanswer = numanswer[0];
+    for(let i = 1; i < numanswer.length; i++){
+        if(numanswer[i] == "+"){
             tempsymbol="+"; 
-        }else if(numberanswerplus[i] == "-"){
+        }else if(numanswer[i] == "-"){
             tempsymbol="-";
-        }else if(numberanswerplus[i] == "x"){
+        }else if(numanswer[i] == "x"){
             tempsymbol="x"
-        }else if (numberanswerplus[i] == "/"){
+        }else if (numanswer[i] == "/"){
             tempsymbol="/"
         }
-    if(typeof(numberanswerplus[i]) == 'number'&& tempsymbol =="+"){
-        numberanswer = Number(numberanswer) + numberanswerplus[i]
-    }else if(typeof(numberanswerplus[i])== 'number' && tempsymbol =="-"){
-        numberanswer = Number(numberanswer) - numberanswerplus[i]
-    }else if(typeof(numberanswerplus[i])== 'number' && tempsymbol =="x"){
-        numberanswer = Number(numberanswer) * numberanswerplus[i]
-    }else if(typeof(numberanswerplus[i])== 'number' && tempsymbol =="/"){
-        numberanswer = Number(numberanswer) / numberanswerplus[i]
+    if(typeof(numanswer[i]) == 'number'&& tempsymbol =="+"){
+        numberanswer = Number(numberanswer) + numanswer[i]
+    }else if(typeof(numanswer[i])== 'number' && tempsymbol =="-"){
+        numberanswer = Number(numberanswer) - numanswer[i]
+    }else if(typeof(numanswer[i])== 'number' && tempsymbol =="x"){
+        numberanswer = Number(numberanswer) * numanswer[i]
+    }else if(typeof(numanswer[i])== 'number' && tempsymbol =="/"){
+        numberanswer = Number(numberanswer) / numanswer[i]
     }
     }
     
@@ -202,7 +202,7 @@ function numequals(){
     
     document.getElementById("output").innerHTML = numberanswer
     numberanswer=0;
-    numberanswerplus.length = 0;
+    numanswer.length = 0;
     numbertemp=0;
 number1 = "";
 x=0
