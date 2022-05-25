@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta charset="UTF-8">
     <title>Testing website</title>
-    <link rel="stylesheet" type ="text/css" href="style.css">
+    <link rel="stylesheet" type ="text/css" href="converter.css">
     <script src="./converter.js" defer></script>
     <link href="/fonts/digital-7.ttf" rel="stylesheet">
     
@@ -27,13 +27,30 @@
 
 
     <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      
+        <button onclick="myFunction()" class="dropbtn">Vienetas A</button>
         <div id="myDropdown" class="dropdown-content">
           <a href="#" onclick="test()">Link 1</a>
           <a href="#" onclick="test()">Link 2</a>
           <a href="#">Link 3</a>
         </div>
+        <div class="input">
+          <textarea type="number" onkeyup="calc()"></textarea>
+        </div>
+      </div>
+
+      <div class="dropdown2">
+        <button onclick="myFunction2()" class="dropbtn">Vienetas B</button>
+        <div id="myDropdown2" class="dropdown-content">
+          <a href="#" onclick="test2()">Link 1</a>
+          <a href="#" onclick="test2()">Link 2</a>
+          <a href="#">Link 3</a>
+          
       </div> 
+      <div class="input">
+        <textarea type="number" onkeyup="calc()" readonly></textarea>
+      </div>
+      
 </body>
 
 <main> 

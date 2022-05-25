@@ -1,9 +1,10 @@
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
+  function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+  }
+  window.onclick = function(event) {    //isjungia dropdown kai paspaudi kitur
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
@@ -15,6 +16,5 @@ function myFunction() {
       }
     }
   }
-  function test(){
-      console.log("penis")
-  }
+  
+  //use onkeyup for calculation start
