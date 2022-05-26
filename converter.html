@@ -2,69 +2,60 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta charset="UTF-8">
-    <title>Testing website</title>
-    <link rel="stylesheet" type ="text/css" href="converter.css">
-    <script src="./converter.js" defer></script>
-    <link href="/fonts/digital-7.ttf" rel="stylesheet">
-    
-    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Testing website</title>
+	<link rel="stylesheet" type="text/css" href="converter.css">
+	<script src="./converter.js" defer></script>
+	<link href="/fonts/digital-7.ttf" rel="stylesheet">
+
+
 </head>
+
 <body>
-    
-    <nav>
-    
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="">About</a></li> 
-        <li><a href="converter.html">Converter</a></li> 
-        
-        
-   
-    </ul>  
-    </nav>
 
+	<nav>
 
-    <div class="dropdown">
-      
-        <button onclick="myFunction()" class="dropbtn">Vienetas A</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#" onclick="test()">Link 1</a>
-          <a href="#" onclick="test()">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-        <div class="input">
-          <textarea type="number" onkeyup="calc()"></textarea>
-        </div>
-        <div class="dropdown2">
-          <button onclick="myFunction2()" class="dropbtn">Vienetas B</button>
-          <div id="myDropdown2" class="dropdown-content">
-            <a href="#" onclick="test2()">Link 1</a>
-            <a href="#" onclick="test2()">Link 2</a>
-            <a href="#">Link 3</a>
-            
-        </div> 
-        <div class="input">
-          <textarea type="number" onkeyup="calc()" readonly></textarea>
-        </div>
-        <div class="vienetai">
-          <button onclick="myFunction3()" class="dropbtn">Matavimo vienetai</button>
-                <div id="myDropdown3" class="dropdown-content2">
-                  <a href="#" onclick="test()">Ilgis</a>
-                  <a href="#" onclick="test()">Svoris</a>
-                  <a href="#">Tūris</a>
-        </div>
-        
-      </div>
-      
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="converter.html">Converter</a></li>
+		</ul>
+	</nav>
 
-      
-      
+	<div class="unitA">
+		<button onclick="showUnitsA()" class="dropbtn">Unit A</button>
+		<div id="unitADropdown" class="dropdown-content">
+			<!-- Give each button a unique value in order to identify it when processing -->
+			<a href="#" id="subunit1A" onclick="setSubUnit('unitTop', true)"></a>
+			<a href="#" id="subunit2A" onclick="setSubUnit('unitMid', true)"></a>
+			<a href="#" id="subunit3A" onclick="setSubUnit('unitBot', true)"></a>
+		</div>
+		<div class="input">
+			<textarea type="number" id="inputA" onkeyup="convert()"></textarea>
+		</div>
+
+		<div class="unitB">
+			<button onclick="showUnitsB()" class="dropbtn">Unit B</button>
+			<div id="unitBDropdown" class="dropdown-content">
+				<!-- Give each button a unique value in order to identify it when processing -->
+				<a href="#" id="subunit1B" onclick="setSubUnit('unitTop', false)"></a>
+				<a href="#" id="subunit2B" onclick="setSubUnit('unitMid', false)"></a>
+				<a href="#" id="subunit3B" onclick="setSubUnit('unitBot', false)"></a>
+			</div>
+			<div class="input">
+				<textarea id="result" type="number" readonly></textarea>
+			</div>
+
+			<div class="vienetai">
+				<button onclick="showUnitsMain()" class="dropbtn">Choose unit</button>
+				<div id="chooseUnitBtn" class="dropdown-content2">
+					<a href="#" onclick="setUnit('lenght')">Lenght</a>
+					<a href="#" onclick="setUnit('weight')">Weight</a>
+					<a href="#" onclick="setUnit('volume')">Volume</a>
+				</div>
+			</div>
+
 </body>
-
-<main> 
-       
-</main>
 
 </html>
