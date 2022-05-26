@@ -28,39 +28,40 @@
 
     <div class="dropdown">
       
-        <button onclick="myFunction()" class="dropbtn">Vienetas A</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#" onclick="test()">Link 1</a>
-          <a href="#" onclick="test()">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
+        <select id="calcfrom" class="dropbtn">Vienetas A
+        
+          <option value="1" id="ilgis1" class="ilg1">Link 1</a>
+          <option value="2" id="ilgis2">Link 2</a>
+          <option value="3" id="ilgis3">Link 3</a>
+          </select>
         <div class="input">
           <textarea type="number" onkeyup="calc()"></textarea>
         </div>
         <div class="dropdown2">
-          <button onclick="myFunction2()" class="dropbtn">Vienetas B</button>
-          <div id="myDropdown2" class="dropdown-content">
-            <a href="#" onclick="test2()">Link 1</a>
-            <a href="#" onclick="test2()">Link 2</a>
-            <a href="#">Link 3</a>
+          <select id="calcfrom" class="dropbtn">Vienetas B
+        
+            <option value="1">Link 1</a>
+            <option value="2">Link 2</a>
+            <option value="3">Link 3</a>
+            </select>
             
         </div> 
-        <div class="input">
+        <div class="input2">
           <textarea type="number" onkeyup="calc()" readonly></textarea>
         </div>
         <div class="vienetai">
           <button onclick="myFunction3()" class="dropbtn">Matavimo vienetai</button>
                 <div id="myDropdown3" class="dropdown-content2">
-                  <a href="#" onclick="test()">Ilgis</a>
-                  <a href="#" onclick="test()">Svoris</a>
-                  <a href="#">Tūris</a>
+                  <a href="#" onclick="ilgis()">Ilgis</a>
+                  <a href="#" onclick="svoris()">Svoris</a>
+                  <a href="#" onclick="turis()">Tūris</a>
         </div>
         
       </div>
       
 
       
-      
+      <p id="testingp"></p>
 </body>
 
 <main> 

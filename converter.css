@@ -86,7 +86,7 @@ div.dropdown2 {
 div.vienetai{
   position: absolute;
   bottom: 100px;
-  left: -400px;
+  left: 0px;
 }
   
   .dropdown-content {
@@ -133,6 +133,11 @@ div.vienetai{
     position: absolute;
     top: 10px;
     left: 120px;
+}
+.input2{
+  position: absolute;
+  left: 520px;
+  top: 10px;
 }
 textarea{
     resize: NONE;
