@@ -1,11 +1,14 @@
 function showUnitsA() {
 	document.getElementById("unitADropdown").classList.toggle("show");
+	convert()
 }
 function showUnitsB() {
 	document.getElementById("unitBDropdown").classList.toggle("show");
+	convert()
 }
 function showUnitsMain() {
 	document.getElementById("chooseUnitBtn").classList.toggle("show2");
+	convert()
 }
 
 window.onclick = function (event) {    //isjungia dropdown kai paspaudi kitur
@@ -90,8 +93,11 @@ function setUnit(unit) {
 			document.getElementById("subunit2B").innerHTML = volume.unitMid;
 			document.getElementById("subunit3B").innerHTML = volume.unitBot;
 			break;
+			
 	}
+	
 	return data.unit = unit;
+	
 }
 
 // Set the subunit
@@ -105,6 +111,7 @@ function setSubUnit(subUnit, A) {
 	} else {
 		data.subUnitB = subUnit;
 	}
+	
 }
 
 // lenght: m, cm, mm 100
