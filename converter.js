@@ -1,14 +1,13 @@
 function showUnitsA() {
-	document.getElementById("unitADropdown").classList.toggle("show");
-	convert()
+	document.getElementById("unitADropdown").classList.toggle("show");	
 }
 function showUnitsB() {
 	document.getElementById("unitBDropdown").classList.toggle("show");
-	convert()
+	
 }
 function showUnitsMain() {
 	document.getElementById("chooseUnitBtn").classList.toggle("show2");
-	convert()
+	
 }
 
 window.onclick = function (event) {    //isjungia dropdown kai paspaudi kitur
@@ -269,5 +268,8 @@ function convert() {
 		}
 	}
 	// display the result
-	document.getElementById("result").innerHTML = data.result;
+	if(data.result != NaN && data.result != undefined){
+		document.getElementById("result").innerHTML = data.result;
+	}
+	
 }
