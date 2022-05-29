@@ -35,9 +35,6 @@ window.onclick = function (event) {    //isjungia dropdown kai paspaudi kitur
 	}
 }
 
-//use onkeyup for calculation start
-
-// define global variables
 var data = {
 	unit: undefined,		// lenght, weight, volume
 	subUnitA: undefined,	// m, cm, mm etc...
@@ -117,9 +114,7 @@ function setSubUnit(subUnit, A) {
 // volume: l, ml, centileter 1000
 
 function convert() {
-	// get the value from the inputA input field
 	var value = document.getElementById("inputA").value;
-	// conver to float
 	data.value = parseFloat(value);
 
 	// for LENGHT
