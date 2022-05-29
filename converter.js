@@ -6,8 +6,7 @@ function showUnitsB() {
 	
 }
 function showUnitsMain() {
-	document.getElementById("chooseUnitBtn").classList.toggle("show2");
-	
+	document.getElementById("chooseUnitBtn").classList.toggle("show2");	
 }
 
 window.onclick = function (event) {    //isjungia dropdown kai paspaudi kitur
