@@ -119,7 +119,7 @@ function convert() {
 
 	// for LENGHT
 	if (data.unit === 'lenght' && data.subUnitA != undefined && data.subUnitB != undefined) {
-		// convert the value
+		
 		switch (data.subUnitA) {
 			case "unitTop":
 				switch (data.subUnitB) {
